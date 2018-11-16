@@ -1,0 +1,8 @@
+[user]
+	name = Dan Guest
+	email = dguest@cern.ch
+[color]
+	dif = auto
+	status = auto
+	branch = auto
+	ui = always
