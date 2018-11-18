@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-git clone --no-checkout ssh://git@gitlab.cern.ch:7999/atlas/athena.git
-cd athena
-git config core.sparsecheckout true
-
