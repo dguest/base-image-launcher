@@ -7,5 +7,5 @@
 )
 cat <<EOF >> ~/.bashrc
 . ~/release_setup.sh
-. ~/**/git-fatlas/git-fatlas.sh
+. ~/**/dans-awesome-pack/setup.sh
 EOF
