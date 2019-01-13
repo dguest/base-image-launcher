@@ -1,0 +1,5 @@
+# ignore gitconfig, since this should be set by the user
+/.gitconfig
+
+# also ignore the bin directory
+/bin/
