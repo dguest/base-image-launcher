@@ -47,6 +47,9 @@ touch .WORKING_DIRECTORY_STACK
 cat <<EOF >> ~/.bashrc
 . ~/release_setup.sh
 . ~/${PORTAL}/dans-awesome-pack/setup.sh
+HISTFILE=${HOME}/${PORTAL}/code/.history
+HISTSIZE=""
+HISTFILESIZE=""
 PATH=${PATH}:${HOME}/${PORTAL}/bin
 DIRECTORY_STACK_FILE=~/${PORTAL}/code/.WORKING_DIRECTORY_STACK
 load-dir-stack
