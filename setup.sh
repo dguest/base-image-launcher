@@ -15,10 +15,10 @@ PORTAL=portal
   name = Cerny McCernface
   email = cernface@cern.ch
 [color]
-	dif = auto
-	status = auto
-	branch = auto
-	ui = always
+  dif = auto
+  status = auto
+  branch = auto
+  ui = always
 EOF
         ln -s ${PORTAL}/.gitconfig
     fi
