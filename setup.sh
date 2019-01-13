@@ -20,8 +20,8 @@ PORTAL=portal
   branch = auto
   ui = always
 EOF
-        ln -s ${PORTAL}/.gitconfig
     fi
+    ln -s ${PORTAL}/.gitconfig
 )
 
 # set up some useful utilities
