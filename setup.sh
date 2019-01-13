@@ -8,7 +8,20 @@ PORTAL=portal
 (
     cd ~
     ln -s ${PORTAL}/ssh .ssh
-    ln -s ${PORTAL}/.gitconfig
+    if [[ ! -f ${PORTAL}/.gitconfig ]] ; then
+        echo "making default gitconfig"
+        cat << EOF > ${PORTAL}/.gitconfig
+[user]
+  name = Cerny McCernface
+  email = cernface@cern.ch
+[color]
+	dif = auto
+	status = auto
+	branch = auto
+	ui = always
+EOF
+        ln -s ${PORTAL}/.gitconfig
+    fi
 )
 
 # set up some useful utilities
