@@ -3,3 +3,6 @@
 
 # also ignore the bin directory
 /bin/
+
+# we set up a release the first time we run. After that we read from this
+/RELEASE
