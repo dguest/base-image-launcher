@@ -10,19 +10,21 @@ else
     set -eu
 fi
 
+DEFAULT_TAG=21.2.82
+REL_FILE=RELEASE
+
 _usage() {
    cat <<EOF
-usage: ${0##*/} [release]
+usage: ${0##*/} [release] [tag=${DEFAULT_TAG}]
 
 The "release" argument is required if not set already.
 Must be: 'top' or 'base'
 EOF
 }
 
-REL_FILE=RELEASE
+TAG=${2-${DEFAULT_TAG}}
 
-if [[ $# == 1 ]] ; then
-    TAG=21.2.82
+if (( $# >= 1 )) ; then
     case $1 in
         top) RELEASE=analysistop:${TAG} ;;
         base) RELEASE=analysisbase:${TAG} ;;
