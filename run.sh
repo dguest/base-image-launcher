@@ -28,6 +28,7 @@ if (( $# >= 1 )) ; then
     case $1 in
         top) RELEASE=analysistop:${TAG} ;;
         base) RELEASE=analysisbase:${TAG} ;;
+        anal) RELEASE=athanalysis:${TAG} ;;
         *) _usage; exit 1 ;;
     esac
     echo $RELEASE > $REL_FILE
