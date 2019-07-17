@@ -18,7 +18,7 @@ _usage() {
 usage: ${0##*/} [release] [tag=${DEFAULT_TAG}]
 
 The "release" argument is required if not set already.
-Must be: 'top' or 'base'
+Must be: 'top', 'base', or 'anal'
 EOF
 }
 
