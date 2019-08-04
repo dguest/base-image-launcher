@@ -10,7 +10,7 @@ else
     set -eu
 fi
 
-DEFAULT_TAG=21.2.83
+DEFAULT_TAG=21.2.84-centos7
 REL_FILE=RELEASE
 
 _usage() {
